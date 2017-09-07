@@ -13,6 +13,7 @@
 		094F0A9B1F60E5D400355246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094F0A9A1F60E5D400355246 /* Assets.xcassets */; };
 		094F0A9E1F60E5D400355246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094F0A9C1F60E5D400355246 /* LaunchScreen.storyboard */; };
 		094F0AA91F60E5D400355246 /* Present_DifferentlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094F0AA81F60E5D400355246 /* Present_DifferentlyTests.swift */; };
+		094F0AB41F61C13200355246 /* BottomSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094F0AB31F61C13200355246 /* BottomSheetPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		094F0AA41F60E5D400355246 /* Present DifferentlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Present DifferentlyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		094F0AA81F60E5D400355246 /* Present_DifferentlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Present_DifferentlyTests.swift; sourceTree = "<group>"; };
 		094F0AAA1F60E5D400355246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		094F0AB31F61C13200355246 /* BottomSheetPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				094F0A9A1F60E5D400355246 /* Assets.xcassets */,
 				094F0A9C1F60E5D400355246 /* LaunchScreen.storyboard */,
 				094F0A9F1F60E5D400355246 /* Info.plist */,
+				094F0AB31F61C13200355246 /* BottomSheetPresentationController.swift */,
 			);
 			path = "Present Differently";
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			files = (
 				094F0A961F60E5D400355246 /* RootViewController.swift in Sources */,
 				094F0A941F60E5D400355246 /* AppDelegate.swift in Sources */,
+				094F0AB41F61C13200355246 /* BottomSheetPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
