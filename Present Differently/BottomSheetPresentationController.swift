@@ -54,6 +54,20 @@ class BottomSheetPresentationController: UIPresentationController {
         }
     }
 
+    override func dismissalTransitionWillBegin() {
+        guard let coordinator = presentedViewController.transitionCoordinator else {
+            dimmingView.alpha = 0.0
+            return
+        }
+        coordinator.animate(alongsideTransition: { _ in
+            self.dimmingView.alpha = 0.0
+        }) { [presentingViewController] _ in
+            //Hack to get viewWillAppear & disappear to fire since the presentingViewController is not removed from the
+            //view hierarchy
+            presentingViewController.endAppearanceTransition()
+        }
+    }
+
     /// False by default.  The presenting view should stay in the hierarchy.
     override var shouldRemovePresentersView: Bool {
         return false
