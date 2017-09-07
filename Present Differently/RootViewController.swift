@@ -10,14 +10,10 @@ import UIKit
 
 class RootViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    @IBAction func presentModal(_ sender: Any) {
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "modal") else { return }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        present(vc, animated: true, completion: nil)
     }
 
     @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
