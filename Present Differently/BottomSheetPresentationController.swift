@@ -22,7 +22,7 @@ class BottomSheetPresentationController: UIPresentationController {
     func setupDimmingView() {
         dimmingView.translatesAutoresizingMaskIntoConstraints = false
         dimmingView.alpha = 0.0
-        dimmingView.backgroundColor = UIColor(white: 0.50, alpha: 0.20)
+        dimmingView.backgroundColor = UIColor(white: 0.30, alpha: 0.60)
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(recognizer:)))
         dimmingView.addGestureRecognizer(recognizer)
     }
